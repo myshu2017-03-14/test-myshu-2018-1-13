@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-13T09:36:35.490Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="AIOKNAmbFTlCd4SV9c7y" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-13T09:38:15.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="rki8JQScR7apQx7zPIdO" version="13.6.2" type="github">
   <diagram name="Page-1" id="97916047-d0de-89f5-080d-49f4d83e522f">
     <mxGraphModel dx="1483" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -34,11 +34,11 @@
         <mxCell id="21" value="Maker基因鉴定" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="661.5" y="985.5" width="222" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="22" value="细胞注释" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="660.5" y="1075.5" width="222" height="60" as="geometry" />
+        <mxCell id="O0lkl8zHiSeVPPPmKp58-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontColor=#000000;fontStyle=1;strokeColor=#23445D;strokeWidth=4;endFill=1;endArrow=block;" edge="1" parent="1" source="22" target="O0lkl8zHiSeVPPPmKp58-75">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="23" value="" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="1077" y="715.5" width="200" height="60" as="geometry" />
+        <mxCell id="22" value="细胞类型注释" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="660.5" y="1075.5" width="222" height="60" as="geometry" />
         </mxCell>
         <mxCell id="29" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=4;endArrow=block;endFill=1;fontStyle=1;strokeColor=#23445D;" parent="1" source="2" target="3" edge="1">
           <mxGeometry x="22" y="165.5" width="100" height="100" as="geometry">
@@ -70,15 +70,6 @@
             <mxPoint x="650" y="480" as="targetPoint" />
             <Array as="points">
               <mxPoint x="570" y="670" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="37" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=4;endArrow=block;endFill=1;fontStyle=1;strokeColor=#23445D;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="18" target="23" edge="1">
-          <mxGeometry x="7" y="265.5" width="100" height="100" as="geometry">
-            <mxPoint x="755" y="620" as="sourcePoint" />
-            <mxPoint x="107" y="265.5" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="957" y="655.5" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -182,6 +173,9 @@
         </mxCell>
         <mxCell id="O0lkl8zHiSeVPPPmKp58-73" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;shadow=1;fontSize=14;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;fillColor=#10739E;" vertex="1" parent="1">
           <mxGeometry x="1012" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O0lkl8zHiSeVPPPmKp58-75" value="差异基因功能分析" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;shadow=1;fontSize=14;fontColor=#FFFFFF;fontStyle=1;strokeColor=none;fillColor=#10739E;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1181" width="222" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
