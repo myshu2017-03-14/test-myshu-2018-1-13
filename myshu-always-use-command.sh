@@ -1,5 +1,5 @@
 #----------------------------------------+
-#        qiimeÆô¶¯Óë¹Ø±Õ                 |
+#        qiimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½                 |
 #----------------------------------------+
 # open qiime1
 source activate qiime1
@@ -10,20 +10,20 @@ source activate qiime2-2017.10
 source deactivate
 
 #----------------------------------------+
-#  ete3°üÊ¹ÓÃÖ®Ç°ÐèÒªÉè¶¨»·¾³±äÁ¿        |
+#  ete3ï¿½ï¿½Ê¹ï¿½ï¿½Ö®Ç°ï¿½ï¿½Òªï¿½è¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½        |
 #----------------------------------------+
 # Activate the environment 
 export PATH="/analysis/software_han/software/metagenome-analysis-software/Miniconda2/bin:$PATH"
 
 #----------------------------------------+
-#        pavianÆô¶¯Óë¹Ø±Õ                |
+#        pavianï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½                |
 #----------------------------------------+
 sudo R
-pavian::runApp(host="0.0.0.0",port=5000) # ×îºÃ¼ÓÉÏhost
-# ·ÃÎÊµØÖ· £ºhttp://192.168.1.30:5000/
+pavian::runApp(host="0.0.0.0",port=5000) # ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½host
+# ï¿½ï¿½ï¿½Êµï¿½Ö· ï¿½ï¿½http://192.168.1.30:5000/
 
 #----------------------------------------+
-#        blast½¨¿âÓë±È¶ÔÃüÁî             |
+#        blastï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¶ï¿½ï¿½ï¿½ï¿½ï¿½             |
 #----------------------------------------+
 nohup makeblastdb -in ncbi_swissprot_filter.fasta -dbtype prot -input_type fasta -hash_index -title swissprot -out swissprot -parse_seqids &
 nohup blastp -query AFprotein.fasta -db swissprot -out AFSwiss_Prot.out -outfmt 6 -evalue 1e-5 -num_threads 6 -max_target_seqs 5 &
@@ -36,58 +36,58 @@ query id, subject id, % identity, alignment length, mismatches, gap opens, q.sta
 
 
 
-# EXCEL Á½¸öµ¥Ôª¸ñÒÔ¡°£¬¡±·Ö¸ôºÏ²¢
+# EXCEL ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ï²ï¿½
 #HM.4.10,HM.4.1
 =B60&","&C59
 
 #14 barcode 
 lbc41--lbc41 lbc9--lbc9 lbc89--lbc89 lbc1--lbc1 lbc2--lbc2 lbc49--lbc49 lbc57--lbc57 lbc10--lbc10 lbc33--lbc33 lbc25--lbc25 lbc17--lbc17 lbc81--lbc81 lbc65--lbc65 lbc73--lbc73
 
-sudo apt-cache search <°üÃû> #ËÑË÷²é¿´µ±Ç°ÏµÍ³ÖÐµÄ°²×°°ü
+sudo apt-cache search <ï¿½ï¿½ï¿½ï¿½> #ï¿½ï¿½ï¿½ï¿½ï¿½é¿´ï¿½ï¿½Ç°ÏµÍ³ï¿½ÐµÄ°ï¿½×°ï¿½ï¿½
 
-less -SN file #°´ÐÐÏÔÊ¾ÎÄ¼þ£¬²¢ÏÔÊ¾ÐÐºÅ
+less -SN file #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ðºï¿½
 
-jobs -l #ÏÔÊ¾ÔËÐÐ½ø³ÌµÄID
-wget -c file #¶ÏµãÐø´«
+jobs -l #ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ð½ï¿½ï¿½Ìµï¿½ID
+wget -c file #ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½
 #----------------------------------------+
-#    shell±à³Ì¼¼ÇÉ £¨±à¼­ÎÄ¼þ£©          |
+#    shellï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½à¼­ï¿½Ä¼ï¿½ï¿½ï¿½          |
 #----------------------------------------+
-1¡¢ÔÚÎÄ¼þÄ©Î²²åÈë»»ÐÐ·û£º
+1ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ä©Î²ï¿½ï¿½ï¿½ë»»ï¿½Ð·ï¿½ï¿½ï¿½
 echo -e "\n" >>$GENE.1.gen.blastn_out
-Ö±½Ó echo "" >> text.txt ¼´¿É
+Ö±ï¿½ï¿½ echo "" >> text.txt ï¿½ï¿½ï¿½ï¿½
 
 
-2¡¢sortÅÅÐò£¨Shell£©
-sort -u file  #È¥³ýÖØ¸´ÐÐ
-sort -r file  #½µÐòÊä³ö
-sort -r number.txt -o number.txt  #¿ÉÒÔÊä³öµ½Ô´ÎÄ¼þÖÐ£¬Ô´ÎÄ¼þÖ±½Ó±»¸²¸Ç
-sort -n file  #°´ÕÕÊýÖµÅÅÐò£¬Ä¬ÈÏÊÇ°´ÕÕ×Ö·ûÅÅÐò
-sort -t : -k 2  #-tÖ¸¶¨·Ö¸ô·û£¬ Ö¸¶¨TAB·Ö¸ô£ºsort -t $'\t' £» -kÖ¸¶¨ÁÐ
-# ²»¶Ô±êÌâÐÐ£¨µÚÒ»ÐÐ£©½øÐÐÅÅÐò£¬´ÓµÚ¶þÐÐ¿ªÊ¼°´ÕÕµÚÒ»ÁÐ½øÐÐÅÅÐò
+2ï¿½ï¿½sortï¿½ï¿½ï¿½ï¿½Shellï¿½ï¿½
+sort -u file  #È¥ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½
+sort -r file  #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+sort -r number.txt -o number.txt  #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ä¼ï¿½ï¿½Ð£ï¿½Ô´ï¿½Ä¼ï¿½Ö±ï¿½Ó±ï¿½ï¿½ï¿½ï¿½ï¿½
+sort -n file  #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+sort -t : -k 2  #-tÖ¸ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ Ö¸ï¿½ï¿½TABï¿½Ö¸ï¿½ï¿½ï¿½sort -t $'\t' ï¿½ï¿½ -kÖ¸ï¿½ï¿½ï¿½ï¿½
+# ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Ò»ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò£¬´ÓµÚ¶ï¿½ï¿½Ð¿ï¿½Ê¼ï¿½ï¿½ï¿½Õµï¿½Ò»ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 head -1 $args && nawk 'NR>1' $args | sort -k 1 > $name\_plot.txt
-# ¸ù¾ÝµÚÒ»ÁÐÈ¥ÖØ£¬ÏàÍ¬µÄ±£ÁôµÚ¶þÁÐÖµ×î´óµÄÄÇ¸ö
+# ï¿½ï¿½ï¿½Ýµï¿½Ò»ï¿½ï¿½È¥ï¿½Ø£ï¿½ï¿½ï¿½Í¬ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½
 cat data.txt | sort -rnk2 | awk '{if (!keys[$1]) print $0; keys[$1] = 1;}'
 
-3¡¢ÅúÁ¿Ìæ»»ÎÄ¼þÃû£¨Shell£© 
+3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ»»ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Shellï¿½ï¿½ 
 for file in `ls *.ref`;do mv $file `echo $file|sed 's/multipleR-WHSW1700//g'`;done;
 
-4¡¢ÅúÁ¿´¦ÀíÍ¬Ò»ÎÄ¼þ¼ÐÖÐµÄÎÄ¼þ£¨shell£©
+4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½shellï¿½ï¿½
 #----------------------------------------
 #!/bin/bash
 
 IN=$1
 for args in /analysis/software_han/1-data/HLA-datas/pacbio-data/HLA-raw-data/processed-raw-data/CCS-sequences/*
 do
-#        echo $args #Êä³öÎÄ¼þÄ¿Â¼ÏÂËùÓÐÄ¿Â¼+ÎÄ¼þ
-#	echo $(basename $args .fastq)  #ÌáÈ¡ÎÄ¼þÃû
- 	#±äÁ¿Ìæ»»
+#        echo $args #ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼+ï¿½Ä¼ï¿½
+#	echo $(basename $args .fastq)  #ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½
+ 	#ï¿½ï¿½ï¿½ï¿½ï¿½æ»»
  	sed "s/year/${year}/g"
- 	#¶ÁÈ¡ÎÄ¼þÃ¿Ò»ÐÐ
+ 	#ï¿½ï¿½È¡ï¿½Ä¼ï¿½Ã¿Ò»ï¿½ï¿½
 	cat $args | while read line
 	do
 	    echo "File:${line}"
 	done
-	# Èç¹ûÐÐ°üÀ¨¿Õ°×·û£¬Ôò¶ÁÈ¡µÄÊ±ºò¿Õ°×»á±ä³É»»ÐÐ£¬½â¾ö°ì·¨
+	# ï¿½ï¿½ï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½Õ°×·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ê±ï¿½ï¿½Õ°×»ï¿½ï¿½É»ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ì·¨
 	FS_old=$IFS
 	FS=$'\n'
 	or line in  `cat  rollback_config`
@@ -98,12 +98,12 @@ do
 	
 
 done
-#------ Á½¸öÎÄ¼þ ----------------
-#!/usr/bin/env bash  # ×¢ÒâÊ¹ÓÃÕâ¸öÍ·²ÅÄÜÊ¹ÓÃ(n++)£»¾Í²»±¨´íÁË
+#------ ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ ----------------
+#!/usr/bin/env bash  # ×¢ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½(n++)ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 n=1
 for i in S0671_06B_CHG028937-2017K14P150-1-LHT-CAGATC_L006_*
 do
-	n1=$(($n % 2))  #Ìá½»µ½SGE»á±¨´í %2: syntax error: operand expected (error token is "%2")£¬¸ü¸Ä·½·¨ÊÇÔÚ¡°%¡±×óÓÒ¼ÓÉÏ¿Õ¸ñ
+	n1=$(($n % 2))  #ï¿½á½»ï¿½ï¿½SGEï¿½á±¨ï¿½ï¿½ %2: syntax error: operand expected (error token is "%2")ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½%ï¿½ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ï¿½Ï¿Õ¸ï¿½
 	if [ $n1 -eq 0 ]
 	then
 		file2=$i
@@ -129,7 +129,7 @@ USAGE: $0 otu_table_file map_file tree MAX_RARE_DEPTH COUNT output_dir
         or $0 -h  # show this message
 
 EXAMPLE:
-¡¡$0 otu_table_no_singletons_even_3870.biom ../../../103_16S_samples_output/mapping_file.txt ../otus/rep_set.tre 3870 1:17,2:28,3:30,4:28 . 
+ï¿½ï¿½$0 otu_table_no_singletons_even_3870.biom ../../../103_16S_samples_output/mapping_file.txt ../otus/rep_set.tre 3870 1:17,2:28,3:30,4:28 . 
 
 HELP
         exit 0
@@ -139,109 +139,109 @@ HELP
 [ "$1" = "-h" ] && help
 
 
-# ÅÐ¶ÏÎÄ¼þ¼Ð¼°ÎÄ¼þÊÇ·ñ´æÔÚ
-#Èç¹ûÎÄ¼þ¼Ð²»´æÔÚ£¬´´½¨ÎÄ¼þ¼Ð
+# ï¿½Ð¶ï¿½ï¿½Ä¼ï¿½ï¿½Ð¼ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+#ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
 if [ ! -d "/myfolder" ]; then
   mkdir /myfolder
 fi
-# -f ²ÎÊýÅÐ¶Ï $file ÊÇ·ñ´æÔÚ
+# -f ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ $file ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
 if [ ! -f "$file" ]; then
   touch "$file"
 fi
 #----------------------------------------
 
-5¡¢Í³¼ÆÃüÁî
-#Í¨¹ý¸Ä±ä$1¿ÉÒÔÖ¸¶¨ÄÄÒ»ÁÐ£¬Ä¬ÈÏ$1ÎªµÚÒ»ÁÐ
-ÁÐÇóºÍ£º cat you.txt |awk '{a+=$1}END{print a}'
-ÁÐÇóÆ½¾ùÖµ£ºcat you.txt |awk '{a+=$1}END{print a/NR}'
-ÁÐÇó×î´óÖµ£ºcat you.txt |awk 'BEGIN{a=0}{if ($1>a) a=$1 fi}END{print a}'  
+5ï¿½ï¿½Í³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#Í¨ï¿½ï¿½ï¿½Ä±ï¿½$1ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ð£ï¿½Ä¬ï¿½ï¿½$1Îªï¿½ï¿½Ò»ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½Í£ï¿½ cat you.txt |awk '{a+=$1}END{print a}'
+ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½Öµï¿½ï¿½cat you.txt |awk '{a+=$1}END{print a/NR}'
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½cat you.txt |awk 'BEGIN{a=0}{if ($1>a) a=$1 fi}END{print a}'  
 
-#Í³¼ÆfastaÎÄ¼þÓÐ¶àÉÙÌõÐòÁÐ
-grep ¡®>¡¯ S_pastorianus.fasta | wc ¨Cl
-#Í³¼ÆfastqÎÄ¼þÖÐreadsÊýÄ¿
+#Í³ï¿½ï¿½fastaï¿½Ä¼ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+grep ï¿½ï¿½>ï¿½ï¿½ S_pastorianus.fasta | wc ï¿½Cl
+#Í³ï¿½ï¿½fastqï¿½Ä¼ï¿½ï¿½ï¿½readsï¿½ï¿½Ä¿
 awk '{s++}END{print s/4}' file.fastq
 
-#Í³¼ÆÎÄ¼þ¼ÐÄÚÎÄ¼þ¸öÊýÒÔ¼°ÎÄ¼þ¼Ð¸öÊý
-#Í³¼ÆÄ³ÎÄ¼þ¼ÐÏÂÎÄ¼þµÄ¸öÊý
+#Í³ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä¼ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½
+#Í³ï¿½ï¿½Ä³ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½
 ls -l |grep "^-"|wc -l
-#Í³¼ÆÄ³ÎÄ¼þ¼ÐÏÂÄ¿Â¼µÄ¸öÊý
-ls -l |grep "^£ä"|wc -l
-#Í³¼ÆÎÄ¼þ¼ÐÏÂÎÄ¼þµÄ¸öÊý£¬°üÀ¨×ÓÎÄ¼þ¼ÐÀïµÄ
+#Í³ï¿½ï¿½Ä³ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½Ä¸ï¿½ï¿½ï¿½
+ls -l |grep "^ï¿½ï¿½"|wc -l
+#Í³ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ls -lR|grep "^-"|wc -l
 
-#Í³¼Æµ±Ç°Ä¿Â¼ÏÂËùÓÐÎÄ¼þ¼ÐµÄ´óÐ¡
+#Í³ï¿½Æµï¿½Ç°Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ÐµÄ´ï¿½Ð¡
 du -ah --max-depth=1
 
-#Í³¼Æfile2ÖÐÓÐ£¬file1ÖÐÃ»ÓÐµÄÐÐ
+#Í³ï¿½ï¿½file2ï¿½ï¿½ï¿½Ð£ï¿½file1ï¿½ï¿½Ã»ï¿½Ðµï¿½ï¿½ï¿½
 grep -vFf file1 file2
 
-# Í³¼ÆÄ³Ò»ÁÐÖµÖØ¸´ÖµµÄ¸öÊý
+# Í³ï¿½ï¿½Ä³Ò»ï¿½ï¿½Öµï¿½Ø¸ï¿½Öµï¿½Ä¸ï¿½ï¿½ï¿½
 cut -f 3 blastn_97_otus_uniq_anno_cov.out | sort | uniq -c >count.txt
 
-6¡¢ÀûÓÃperlÕýÔòÌæ»»Ä³Ò»ÐÐµÄÄÚÈÝ
-#	-p ±íÊ¾Æ¥ÅäÃ¿Ò»ÐÐ
-# -e ±íÊ¾ºóÃæ³ÌÐòÐ´ÎªÒ»ÐÐ
-# -i ±íÊ¾Ìæ»»½á¹ûÐ´»ØÔ­ÎÄ¼þ
+6ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½perlï¿½ï¿½ï¿½ï¿½ï¿½æ»»Ä³Ò»ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
+#	-p ï¿½ï¿½Ê¾Æ¥ï¿½ï¿½Ã¿Ò»ï¿½ï¿½
+# -e ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ÎªÒ»ï¿½ï¿½
+# -i ï¿½ï¿½Ê¾ï¿½æ»»ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ô­ï¿½Ä¼ï¿½
 perl -p -i -e 's/^(>\S+?)\s.*/$1/g' combined_seqs.trim.fasta
 
-7¡¢¸ù¾ÝIDÌáÈ¡FASTAÎÄ¼þÖÐµÄseq£¨
-#ÀûÓÃQIIMEÈí¼þÖÐµÄextract_seqs_by_sample_id.py½Å±¾£©
+7ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½È¡FASTAï¿½Ä¼ï¿½ï¿½Ðµï¿½seqï¿½ï¿½
+#ï¿½ï¿½ï¿½ï¿½QIIMEï¿½ï¿½ï¿½ï¿½Ðµï¿½extract_seqs_by_sample_id.pyï¿½Å±ï¿½ï¿½ï¿½
 extract_seqs_by_sample_id.py -i polished_assembly_r.fasta -o Monascus_scf397.fasta -s scaffold397
 # samtools faidx
 samtools faidx filter.fasta 8e470bfd-0b02-45c6-8897-e1c51196d487 >one.fasta
-# ¸ù¾Ýfile2ÖÐµÄidÔÚfile1ÖÐ½øÐÐÆ¥Åä£¬É¸Ñ¡³öfile1ÖÐ°üº¬file2ÖÐidµÄÐòÁÐ
+# ï¿½ï¿½ï¿½ï¿½file2ï¿½Ðµï¿½idï¿½ï¿½file1ï¿½Ð½ï¿½ï¿½ï¿½Æ¥ï¿½ä£¬É¸Ñ¡ï¿½ï¿½file1ï¿½Ð°ï¿½ï¿½ï¿½file2ï¿½ï¿½idï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 grep -w -f file2.txt file1.txt > filtered.txt
-# ¸ù¾ÝIDÌáÈ¡fastq»òÕßfastaÎÄ¼þÖÐµÄÐòÁÐ
+# ï¿½ï¿½ï¿½ï¿½IDï¿½ï¿½È¡fastqï¿½ï¿½ï¿½ï¿½fastaï¿½Ä¼ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 seqtk subseq in.fq name.lst > out.fq
 
-8¡¢ÌáÈ¡ÎÄ¼þ
-#ÌáÈ¡ÎÄ¼þµÄÄ³ÐÐµ½Ä³ÐÐÇø¼ä
-#±ÈÈç´ÓµÚ3ÐÐµ½µÚ10ÐÐ
+8ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½
+#ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½Ä³ï¿½Ðµï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#ï¿½ï¿½ï¿½ï¿½Óµï¿½3ï¿½Ðµï¿½ï¿½ï¿½10ï¿½ï¿½
 sed -n '3,10p' myfile > newfile
-# ÌáÈ¡Ä³¸öÎÄ¼þ¼ÐµÄÇ°10¸öÎÄ¼þ²¢cat
+# ï¿½ï¿½È¡Ä³ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½Ç°10ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½cat
 ls bacteria/*.fna | sed -n '1,10p' | xargs cat  >test
 
 
-9¡¢¸ù¾ÝÄ³Ò»ÁÐµÄÖµÌáÈ¡Ä³Ò»·¶Î§µÄÐÐ($NF±íÊ¾×îºóÒ»ÐÐ)
+9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³Ò»ï¿½Ðµï¿½Öµï¿½ï¿½È¡Ä³Ò»ï¿½ï¿½Î§ï¿½ï¿½ï¿½ï¿½($NFï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ò»ï¿½ï¿½)
 awk -F '\t' '$NF>=28510120 && $NF<=33480577{print}'
-awk -F '\t' '{if($NF>=28510120 && $NF<=33480577)print $NF}' #Êä³ö×îºóÒ»ÁÐ
-# cutÈ¡×îºóÒ»ÁÐ
+awk -F '\t' '{if($NF>=28510120 && $NF<=33480577)print $NF}' #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
+# cutÈ¡ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
 cat S08-C-1-K_kraken.labels | rev |cut -f 1 -d ";" | rev 
 
 
-10¡¢É¾³ýÒÔLove¿ªÍ·µÄÐÐ
+10ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½Loveï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½
 sed -i '/^Love/d' 1.txt
 sed -i '3d' 1.txt
 
-11¡¢ËÑË÷²¢ÁÐ³öÂ·¾¶
+11ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Â·ï¿½ï¿½
 ll -R | grep "*.png"
 find | grep "*.png"
-find / -name gcc   #È«¾ÖËÑË÷
+find / -name gcc   #È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-12¡¢È¥ÖØ¸´
+12ï¿½ï¿½È¥ï¿½Ø¸ï¿½
 sort -n $file | uniq  
 sort -n $file | awk '{if($0!=line)print; line=$0}'  
 sort -n $file | sed '$!N; /^.?\n\1$/!P; D'  
 
 #----------------------------------------+
-#                 ubuntuÏà¹ØÃüÁî         |
+#                 ubuntuï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½         |
 #----------------------------------------+
-1¡¢¼ì²éÈí¼þÊÇ·ñ°²×°
+1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½×°
 dpkg -s gridengine-exec 
-dpkg -L gridengine-exec  #ÁÐ³ö°²×°Â·¾¶
+dpkg -L gridengine-exec  #ï¿½Ð³ï¿½ï¿½ï¿½×°Â·ï¿½ï¿½
 
 
 
 
 #----------------------------------------+
-#               ¶ÁÈ¡ÎÄ¼þ                 |
+#               ï¿½ï¿½È¡ï¿½Ä¼ï¿½                 |
 #----------------------------------------+
-1¡¢Í³¼ÆBAMÎÄ¼þ
+1ï¿½ï¿½Í³ï¿½ï¿½BAMï¿½Ä¼ï¿½
 samtools view -c test.bam 
-#Í³¼ÆËùº¬µÄreadsÊýÄ¿
+#Í³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½readsï¿½ï¿½Ä¿
 
 ~/software_han/samtools-1.4.1/bin/samtools stats test.bam
-×îºóµÃµ½µÄÎÄ¼þÖÐ¿ÉÒÔÌáÈ¡Ïà¹ØµÄÐÅÏ¢
+ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Øµï¿½ï¿½ï¿½Ï¢
 # This file was produced by samtools stats (1.4.1+htslib-1.4.1) and can be plotted using plot-bamstats
 # This file contains statistics for all reads.
 # The command line was:  stats 05-DPA1_02_02_02_gen_ref.bwa.sort.bam
@@ -264,19 +264,19 @@ samtools view -c test.bam
 
 
 #----------------------------------------+
-#               ÎÄ¼þ×ª»»                 |
+#               ï¿½Ä¼ï¿½×ªï¿½ï¿½                 |
 #----------------------------------------+
-1¡¢fastq×ªfasta £º
+1ï¿½ï¿½fastq×ªfasta ï¿½ï¿½
 cat file.fastq | paste - - - - | sed 's/^@/>/g'| cut -f1-2 | tr '\t' '\n' > file.fasta
-#BAM£½£½>SAM
+#BAMï¿½ï¿½ï¿½ï¿½>SAM
 samtools view -h -o out.sam out.bam
-#SAM£½£½>BAM
+#SAMï¿½ï¿½ï¿½ï¿½>BAM
 samtools view -bS out.sam >out.bam
--b ÒâË¼Ê¹Êä³öÊ¹BAM format
--S ÒâË¼Ê¹ÊäÈëÊ¹SAM£¬Èç¹û@SQ È±Ê££¬ ÒªÐ´-t
+-b ï¿½ï¿½Ë¼Ê¹ï¿½ï¿½ï¿½Ê¹BAM format
+-S ï¿½ï¿½Ë¼Ê¹ï¿½ï¿½ï¿½ï¿½Ê¹SAMï¿½ï¿½ï¿½ï¿½ï¿½@SQ È±Ê£ï¿½ï¿½ ÒªÐ´-t
 
-2¡¢genebank to gff £¨ÀûÓÃbioperlÖÐµÄ½Å±¾£©
-#¿ÉÒÔÖ±½ÓÀûÓÃÔÚNCBIÖÐµÄGenome Data ViewerÖÐÏÂÔØµÄGENBANKÎÄ¼þ£¬*.flat¸ñÊ½½øÐÐ×ª»»
+2ï¿½ï¿½genebank to gff ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bioperlï¿½ÐµÄ½Å±ï¿½ï¿½ï¿½
+#ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½NCBIï¿½Ðµï¿½Genome Data Viewerï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½GENBANKï¿½Ä¼ï¿½ï¿½ï¿½*.flatï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 perl bp_genbank2gff3.pl NC_000006.11\[28477797..33448354\].flat
 --------------------------------------------------------------------------------------------
 Usage:
@@ -330,15 +330,15 @@ Usage:
             --typesource   SO sequence type for source (e.g. chromosome; region; contig)
             --help     -h  display this message
 ------------------------------------------------------------------------------------------------------------------
-3¡¢
+3ï¿½ï¿½
 
 #----------------------------------------+
-#    50·þÎñÆ÷ÉÏ±¾µØ»¯ÔËÐÐantiSMASH       |
+#    50ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½antiSMASH       |
 #----------------------------------------+
 
-±¾µØ»¯ÔËÐÐantiSMASH£¨Ä¿Ç°ÔÚ50ÉÏ°²×°ÁË£¬30ÉÏ»¹Ã»ÓÐ°²×°£©
-1¡¢¸ù¾Ý×¢ÊÍÐÅÏ¢×ª»»µÃµ½genbank¸ñÊ½µÄ»ùÒò×éÎÄ¼þ
-perl /home/myshu/output/program/gff_to_genbank.pl -i n -gff genome.gff3 ¨Cgenome genome.fasta -protein protein.fasta -out genome.genbank
-2¡¢ÔËÐÐantiSMASH£¨¾ßÌåµÄ²ÎÊýÔÚ50ÉÏÔËÐÐrun_antiSMASH.py -h£©
+ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½antiSMASHï¿½ï¿½Ä¿Ç°ï¿½ï¿½50ï¿½Ï°ï¿½×°ï¿½Ë£ï¿½30ï¿½Ï»ï¿½Ã»ï¿½Ð°ï¿½×°ï¿½ï¿½
+1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½Ï¢×ªï¿½ï¿½ï¿½Ãµï¿½genbankï¿½ï¿½Ê½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+perl /home/myshu/output/program/gff_to_genbank.pl -i n -gff genome.gff3 ï¿½Cgenome genome.fasta -protein protein.fasta -out genome.genbank
+2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½antiSMASHï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½50ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½run_antiSMASH.py -hï¿½ï¿½
 nohup run_antiSMASH.py --cpus 8 --eukaryotic --smcogs --clusterblast -v --knownclusterblast --full-hmmer --asf --subclusterblast --all-orfs --input-type nucl --limit -1 --logfile P_new_out.log --outputfolder ./P_new_out ./PenAur.genbank &
  
